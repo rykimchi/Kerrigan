@@ -1,0 +1,54 @@
+{
+  "name": "ppn-docs",
+  "version": "0.0.1",
+  "author": "Priceline Partner Network",
+  "description": "Priceline Documentation",
+  "contributors": [
+    "Ryan Kim <me@ryan.kim>"
+  ],
+  "scripts": {
+    "build": "babel server -d build",
+    "start": "cross-env NODE_ENV=development npm run build && nodemon --inspect build/index.js",
+    "precommit": "lint-staged",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint:fix": "eslint client/src/ --fix",
+    "lint": "eslint client/src/",
+    "format": "prettier-eslint --write \"client/**/*.js\""
+  },
+  "dependencies": {
+    "axios": "^0.18.0",
+    "body-parser": "^1.18.3",
+    "child_process": "^1.0.2",
+    "cookie-parser": "^1.4.3",
+    "dotenv": "^6.1.0",
+    "fs": "0.0.1-security",
+    "history": "^4.7.2",
+    "http": "0.0.0",
+    "jsonwebtoken": "^8.4.0",
+    "passport-jwt": "^4.0.0",
+    "run-parallel": "^1.1.9"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-eslint": "^8.2.5",
+    "babel-preset-env": "^1.7.0",
+    "cross-env": "^5.2.0",
+    "eslint": "^5.1.0",
+    "eslint-plugin-babel": "^5.1.0",
+    "eslint-plugin-react": "^7.10.0",
+    "express": "^4.16.3",
+    "husky": "^0.14.3",
+    "lint-staged": "^7.2.0",
+    "nodemon": "^1.18.3",
+    "path": "^0.12.7",
+    "postcss-loader": "^2.1.5",
+    "prettier-eslint-cli": "^4.7.1",
+    "rimraf": "^2.6.2"
+  },
+  "lint-staged": {
+    "*.js": [
+
+      "git add"
+    ]
+  }
+}
