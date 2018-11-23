@@ -1,8 +1,11 @@
 import React from "react";
+import Header from 'atoms/Header';
 import { withApp } from "containers/App";
 
 const Home = () => {
-  return <h1>Fucking Finally mate</h1>;
+  return (
+      <Header></Header>
+  );
 };
 
 export default Home;

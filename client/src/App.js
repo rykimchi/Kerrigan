@@ -4,9 +4,10 @@ import { Provider } from "react-redux";
 import { BrowserRouter } from "react-router-dom";
 import Routes from "routes";
 import { loadProgressBar } from "axios-progress-bar";
-import "axios-progress-bar/dist/nprogress.css";
 import "regenerator-runtime/runtime";
 import store from "store";
+import "axios-progress-bar/dist/nprogress.css";
+import './index.css';
 
 loadProgressBar({ showSpinner: false });
 
