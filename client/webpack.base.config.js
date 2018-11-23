@@ -42,7 +42,6 @@ module.exports = {
   plugins: [
     new CopyWebpackPlugin([
       { from: "src/index.html" },
-      { from: "src/assets/favicon.ico" }
     ]),
     new webpack.HotModuleReplacementPlugin()
   ],

@@ -1,5 +1,5 @@
 import React from "react";
-import { withApp } from "containers";
+import { withApp } from "containers/App";
 
 const Home = () => {
   return <h1>Fucking Finally mate</h1>;
